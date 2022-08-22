@@ -4,7 +4,11 @@
 // TODO 3 : Print a nicely formatted result
 
 const numbers = [38, 12, -10]
+const toFahrenheit = (celsius) => {
+    const result = (celsius * 1.8) + 32
+    return result
+}
 for (let i = 0; i < numbers.length; i++) {
-    const fahrenheit = (numbers[i] * 1.8) + 32
+    const fahrenheit = toFahrenheit(numbers[i])
     console.log("The celcius temperature is: " + numbers[i] + " and the Fahrenheit is: " + fahrenheit)
 }
